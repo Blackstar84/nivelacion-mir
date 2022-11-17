@@ -1,0 +1,43 @@
+form{
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 0 auto;
+    background: linear-gradient(#bd09b7,#6b4cf5);
+    box-shadow: 5px 6px 3px 1px grey;
+    color: white;
+}
+
+#email, #password{
+    padding: 7px;
+    width: 95%;
+}
+
+#genero {
+    padding: 7px;
+    width: 100%;   
+    margin-bottom: 10px;
+}
+#terminos{
+    margin-bottom: 30px;
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+#enviar{
+    padding: 5px 15px;
+    float: right;
+}
+
+@media (min-width: 480px){
+    form{
+        width: 100%;
+    }
+}
