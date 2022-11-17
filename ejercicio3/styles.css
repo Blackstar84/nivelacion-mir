@@ -3,10 +3,6 @@ form{
     width: 300px;
     padding: 20px;
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
     margin: 0 auto;
     background: linear-gradient(#bd09b7,#6b4cf5);
     box-shadow: 5px 6px 3px 1px grey;
@@ -36,8 +32,20 @@ label{
     float: right;
 }
 
-@media (min-width: 480px){
+#enviar:hover{
+    background-color: rgb(94, 3, 112);
+    border-color: rgb(94, 3, 112);
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 3px 3px 1px rgb(205, 152, 245);
+}
+
+@media (max-width: 480px){
     form{
-        width: 100%;
+        width: calc(100% - 40px);
+    }
+    body,html{
+        margin: 0;
+        padding: 0;
     }
 }
