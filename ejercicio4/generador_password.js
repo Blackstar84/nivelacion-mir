@@ -4,15 +4,18 @@ function generatePassword(string) {
     let password = "";
     for(let i= 0; i< string.length;i++){
         let char = string[i].toUpperCase();
-        let letterIndex = abecedario.findIndex((letra)=>char === letra)
-        
-
-        if(char=== ' '){
+        let indiceAbecedario;
+        if(char===' '){
             char ='';
-        }else if(char==='A'){
+        }else if(char!=''){
+            indiceAbecedario = abecedario.indexOf(char);   
+        }
+
+        
+        if(char==='A'){
             char = 'Z'
         }else{
-            char = abecedario[letterIndex-1];
+            char = abecedario[indiceAbecedario-1];
         }
         password = password + char;
     }
