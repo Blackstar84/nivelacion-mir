@@ -36,7 +36,7 @@ function matriz(n){
 
     return resultado;
 
-    
+   
 
 }
 
